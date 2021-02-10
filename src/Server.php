@@ -209,9 +209,10 @@ class Server
             $arguments = array();
         }
 
-        if ($isQuery) {
-            return $this->processQuery($id, $method, $arguments);
-        }
+        // if ($isQuery) {
+        //     return $this->processQuery($id, $method, $arguments);
+        // }
+        return $this->processQuery($id, $method, $arguments);
 
         $this->processNotification($method, $arguments);
         return null;

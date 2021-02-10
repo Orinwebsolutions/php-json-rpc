@@ -9,7 +9,7 @@ require_once dirname(__DIR__) . '/vendor/autoload.php';
 
 // Example 1. Send a single query:
 $client = new Client();
-$client->query(1, 'add', array(1, 2));
+$client->query(1, 'notifyLPR', array(1, 2));
 $message = $client->encode();
 
 echo "Example 1. Send a single query:\n",
